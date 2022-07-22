@@ -1,4 +1,4 @@
-package Utils;
+package com.demo.exportdemo.Utils;
 
 /**
  * Int utils

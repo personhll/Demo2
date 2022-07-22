@@ -1,4 +1,4 @@
-package com.demo.main;
+package com.demo.exportdemo.main;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
