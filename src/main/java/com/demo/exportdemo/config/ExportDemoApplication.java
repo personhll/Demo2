@@ -1,5 +1,6 @@
 package com.demo.exportdemo.config;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -9,6 +10,7 @@ import org.springframework.core.env.Environment;
 
 @ComponentScan("com.demo")
 @SpringBootApplication
+@MapperScan("com.demo.exportdemo.mapper")
 public class ExportDemoApplication {
 
     private static final Logger LOG = LoggerFactory.getLogger(ExportDemoApplication.class);
