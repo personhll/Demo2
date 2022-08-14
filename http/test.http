@@ -22,3 +22,26 @@ name=TEST
 GET http://127.0.0.1:8880/test/list
 
 ###
+
+GET http://127.0.0.1:8880/product/list
+
+###
+
+GET http://127.0.0.1:8880/product/createExcel
+
+
+###
+
+GET http://127.0.0.1:8880/product/read
+
+###
+
+GET http://127.0.0.1:8880/eWord
+
+###
+
+
+POST http://127.0.0.1:8880/readTxt
+name=/resource/Exportproperty.txt
+
+###

@@ -1,18 +1,25 @@
 package com.demo.exportdemo.domain;
 
+import com.alibaba.excel.annotation.ExcelProperty;
+
 import java.util.Date;
 
 public class Product {
     private Long id;
 
+    @ExcelProperty(value = "产品编码" ,index = 0)
     private String prodCode;
 
+    @ExcelProperty(value = "产品名称" , index = 1)
     private String prodName;
 
+    @ExcelProperty(value = "产品价格" ,index = 2)
     private Integer prodPrice;
 
+    @ExcelProperty("生产日期")
     private Date createTime;
 
+    @ExcelProperty("更新时间")
     private Date updateTime;
 
     public Long getId() {

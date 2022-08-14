@@ -16,6 +16,13 @@ public interface ProductMapper {
 
     int insertSelective(Product row);
 
+    /**
+     * 保存选中的数据
+     * @param rows
+     * @return
+     */
+    int insertBatch(List<Product> rows);
+
     List<Product> selectByExample(ProductExample example);
 
     Product selectByPrimaryKey(Long id);
@@ -27,4 +34,6 @@ public interface ProductMapper {
     int updateByPrimaryKeySelective(Product row);
 
     int updateByPrimaryKey(Product row);
+
+
 }
